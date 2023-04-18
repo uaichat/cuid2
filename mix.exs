@@ -4,7 +4,7 @@ defmodule Cuid2.MixProject do
   def project do
     [
       app: :cuid2,
-      version: "0.0.1",
+      version: "0.0.2",
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -16,7 +16,7 @@ defmodule Cuid2.MixProject do
       ],
       description: """
       An Elixir implementation of cuid2
-
+      
       See https://github.com/paralleldrive/cuid2
       """
     ]
