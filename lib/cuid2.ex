@@ -80,3 +80,11 @@ defmodule Cuid2 do
 
   def is_cuid?(_, _), do: false
 end
+
+defmodule Cuid2.AutoGenerate do
+  def type, do: :string
+  def cast(cuid2), do: {:ok, cuid2}
+  def dump(cuid2), do: {:ok, cuid2}
+  def load(cuid2), do: {:ok, cuid2}
+  def autogenerate, do: Cuid2.create()
+end
