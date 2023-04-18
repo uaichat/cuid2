@@ -86,5 +86,6 @@ defmodule Cuid2.AutoGenerate do
   def cast(cuid2), do: {:ok, cuid2}
   def dump(cuid2), do: {:ok, cuid2}
   def load(cuid2), do: {:ok, cuid2}
+  def equal?(str1, str2), do: str1 === str2
   def autogenerate, do: Cuid2.create()
 end
